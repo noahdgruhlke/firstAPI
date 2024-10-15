@@ -1,4 +1,4 @@
-namespace firstAPI.Controllers
+namespace firstAPI.Domain.Models.Entities
 {
     public class WeatherForecast
     {

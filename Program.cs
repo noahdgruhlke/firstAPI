@@ -1,6 +1,11 @@
+using firstAPI.Domain.Managers.Repositories;
+using firstAPI.Domain.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<IWeatherForecastService, WeatherForecastService>();
+builder.Services.AddScoped<IWeatherForecastRepositories, WeatherForecastRepositories>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
